@@ -1,0 +1,24 @@
+# Environment variables
+.env
+
+# MoMo raw data (sensitive)
+data/raw/momo.xml
+
+# Database (generated locally)
+data/db.sqlite3
+
+# Generated outputs
+data/processed/dashboard.json
+
+# Logs (generated locally)
+data/logs/etl.log
+data/logs/dead_letter/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
