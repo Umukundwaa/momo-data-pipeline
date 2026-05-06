@@ -62,6 +62,53 @@ This project processes raw MTN Mobile Money (MoMo) SMS data exported in XML form
 
 ## 📁 Project Structure
 
-> *(Folder structure will be added in Week 1)*
+```
+momo-data-pipeline/
+├── README.md                        # Project overview and setup guide
+├── .env.example                     # Environment variable template
+├── .gitignore                       # Files and folders excluded from GitHub
+├── requirements.txt                 # Python dependencies
+├── index.html                       # Dashboard entry point
+│
+├── web/                             # Frontend files
+│   ├── styles.css                   # Dashboard styling
+│   ├── chart_handler.js             # Fetch and render charts/tables
+│   └── assets/                      # Images and icons
+│
+├── data/                            # All data files
+│   ├── raw/                         # Original XML input (git-ignored)
+│   │   └── momo.xml
+│   ├── processed/                   # Cleaned JSON output (git-ignored)
+│   │   └── dashboard.json
+│   ├── db.sqlite3                   # SQLite database (git-ignored)
+│   └── logs/                        # Generated log files (git-ignored)
+│       ├── etl.log
+│       └── dead_letter/             # Unparsed XML snippets
+│
+├── etl/                             # ETL pipeline scripts
+│   ├── __init__.py
+│   ├── config.py                    # File paths and settings
+│   ├── parse_xml.py                 # XML parsing
+│   ├── clean_normalize.py           # Data cleaning and normalization
+│   ├── categorize.py                # Transaction categorization
+│   ├── load_db.py                   # Load data into SQLite
+│   └── run.py                       # Run full ETL pipeline
+│
+├── api/                             # Optional FastAPI backend
+│   ├── __init__.py
+│   ├── app.py                       # API routes
+│   ├── db.py                        # Database connection
+│   └── schemas.py                   # Response models
+│
+├── scripts/                         # Shell scripts
+│   ├── run_etl.sh                   # Run the ETL pipeline
+│   ├── export_json.sh               # Export dashboard JSON
+│   └── serve_frontend.sh            # Serve the frontend locally
+│
+└── tests/                           # Unit tests
+    ├── test_parse_xml.py
+    ├── test_clean_normalize.py
+    └── test_categorize.py
+```
 
 ---
