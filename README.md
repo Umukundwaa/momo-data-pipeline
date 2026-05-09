@@ -31,7 +31,7 @@ This project processes raw MTN Mobile Money (MoMo) SMS data exported in XML form
 
 ## 🏗️ Architecture Diagram
 
-> 🔗 *Link to be added after diagram is created*
+> 🔗 ![ MoMo Data Pipeline Architecture](data/architecture.png)
 
 ---
 
