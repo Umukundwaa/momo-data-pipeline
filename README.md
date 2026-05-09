@@ -37,7 +37,7 @@ This project processes raw MTN Mobile Money (MoMo) SMS data exported in XML form
 
 ## 📋 Scrum Board
 
-> 🔗 *Link to be added after board is set up*
+> 🔗 https://trello.com/b/sPe6tdYP
 
 ---
 
