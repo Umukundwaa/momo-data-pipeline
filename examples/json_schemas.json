@@ -1,0 +1,76 @@
+{
+  "user": {
+    "id": 1,
+    "phone_number": "0788123456",
+    "full_name": "Jean Claude",
+    "account_type": "personal",
+    "created_at": "2026-05-13T09:00:00"
+  },
+
+  "transaction_category": {
+    "id": 2,
+    "category_name": "Incoming Money",
+    "category_code": "INCOMING",
+    "description": "Money received from another user",
+    "created_at": "2026-05-13T09:00:00"
+  },
+
+  "tag": {
+    "id": 1,
+    "tag_name": "large-amount",
+    "created_at": "2026-05-13T09:00:00"
+  },
+
+  "system_log": {
+    "id": 10,
+    "transaction_id": 101,
+    "log_level": "INFO",
+    "process_name": "load_db",
+    "message": "Transaction inserted successfully",
+    "created_at": "2026-05-13T09:15:00"
+  },
+
+  "complete_transaction": {
+    "id": 101,
+    "transaction_ref": "TXN98374621",
+    "amount": 150000.00,
+    "fee": 250.00,
+    "sender_phone": "0788123456",
+    "receiver_phone": "0788999888",
+    "transaction_date": "2026-05-13T08:30:00",
+    "status": "completed",
+
+    "user": {
+      "id": 1,
+      "phone_number": "0788123456",
+      "full_name": "Jean Claude",
+      "account_type": "personal"
+    },
+
+    "category": {
+      "id": 2,
+      "category_name": "Incoming Money",
+      "category_code": "INCOMING"
+    },
+
+    "tags": [
+      {
+        "id": 1,
+        "tag_name": "large-amount"
+      },
+      {
+        "id": 2,
+        "tag_name": "suspicious"
+      }
+    ],
+
+    "system_logs": [
+      {
+        "id": 20,
+        "log_level": "INFO",
+        "process_name": "categorize",
+        "message": "Transaction categorized successfully"
+      }
+    ]
+  }
+}
