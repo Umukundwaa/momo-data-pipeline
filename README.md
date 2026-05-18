@@ -116,7 +116,7 @@ mysql -u root -p < database/database_setup.sql
 
 ## 📋 Scrum Board
 
-> 🔗 https://trello.com/b/sPe6tdYP
+> 🔗 
 
 ---
 
