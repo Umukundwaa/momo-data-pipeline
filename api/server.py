@@ -356,7 +356,6 @@ if __name__ == "__main__":
     print(f"\n{'='*50}")
     print(f"  MoMo Data Pipeline API — Team Nexus")
     print(f"  Running at http://{HOST}:{PORT}")
-    print(f"  Auth: username=admin  password=nexus123")
     print(f"{'='*50}\n")
     print("Available endpoints:")
     print("  GET    /transactions")
