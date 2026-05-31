@@ -22,8 +22,8 @@
     1691,
     999
   ],
-  "average_linear_search_microseconds": 0.1192,
-  "average_dictionary_lookup_microseconds": 0.0804,
-  "average_speedup": 1.5,
+  "average_linear_search_microseconds": 0.3293,
+  "average_dictionary_lookup_microseconds": 0.3386,
+  "average_speedup": 1.0,
   "conclusion": "Dictionary lookup is significantly faster than linear search for large datasets"
 }
