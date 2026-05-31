@@ -123,27 +123,6 @@ Linear Search average time : {avg_linear:.4f} microseconds
 Dictionary Lookup avg time : {avg_dict:.4f} microseconds
 Dictionary is faster by    : {avg_speedup:.1f}x on average
 
-EXPLANATION:
-Linear Search scans every record from position 0 until it finds
-the target. For a dataset of {len(transactions_list)} records, it may check
-up to {len(transactions_list)} records in the worst case — O(n) complexity.
-
-Dictionary Lookup uses a hash map (Python dict). Python computes
-a hash of the key (ID) and jumps directly to the memory address
-where the value is stored. This takes constant time regardless
-of dataset size — O(1) complexity.
-
-REFLECTION:
-Why is dictionary lookup faster?
-  - Linear search: time grows WITH the dataset size
-  - Dictionary lookup: time stays CONSTANT no matter how big the dataset
-
-Other data structures that could improve search efficiency:
-  1. Binary Search Tree (BST) — O(log n) search on sorted data
-  2. Binary Search on sorted list — O(log n) if list is pre-sorted by ID
-  3. Hash Table — same as dict, O(1) average
-  4. Trie — O(k) where k is key length, great for text/string searches
-{'=' * 65}
 """)
 
     # Export results as JSON for documentation
