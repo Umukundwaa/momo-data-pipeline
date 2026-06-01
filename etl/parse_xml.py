@@ -29,7 +29,7 @@ def parse_xml(file_path: str) -> List[Dict]:
     transactions: List[Dict] = []
 
     # heuristic: find all elements named 'transaction' (case-insensitive)
-    for tx in root.findall('.//transaction'):
+    for tx in root.findall('.//sms'):
         tx_dict: Dict = {}
 
         # try attributes first

@@ -9,8 +9,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Add parent directory to path so we can import parse_xml
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from parse_xml import parse_xml
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+from etl.parse_xml import parse_xml
 
 # CONFIGURATION
 HOST = "localhost"
@@ -22,7 +22,7 @@ VALID_PASSWORD = os.getenv("API_PASSWORD")
 
 # Load and store all transactions in memory
 XML_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                        "../modified_sms_v2.xml")
+                        "../data/modified_sms_v2.xml")
 
 print("Loading transactions from XML...")
 ALL_TRANSACTIONS = parse_xml(XML_FILE)
